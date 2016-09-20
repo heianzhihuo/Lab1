@@ -20,7 +20,11 @@ class monomial {
 				// System.out.println(coefficient);
 			} else {
 				String[] var = s.split("\\^");
-				int exp = var.length == 1 ? 1 : Integer.parseInt(var[1]);
+				//int exp = var.length == 1 ? 1 : Integer.parseInt(var[1]);
+				int exp = 1;
+				for(int i=1;i<var.length;i++){
+					exp *= Integer.parseInt(var[i]);
+				}
 				if (mon.get(var[0]) == null) {
 					mon.put(var[0], exp);
 				} else {
@@ -53,7 +57,6 @@ class monomial {
 			else if (coefficient != 1){
 				str = String.valueOf(this.coefficient) + "*" + str;
 			}
-				
 		}
 			
 	/*	if (coefficient == -1) {
@@ -70,7 +73,8 @@ class monomial {
 		return str;
 	}
 
-	public boolean simplify(HashMap<String,Integer>vals) {
+	public void simplify(HashMap<String,Integer>vals) {
+		//dan xiang shi de ji suan
 		Set<String> tmps = new HashSet<String>(); 
 		tmps.addAll(vals.keySet());
 		tmps.retainAll(mon.keySet());
@@ -78,14 +82,18 @@ class monomial {
 			coefficient *= Math.pow(vals.get(s),mon.get(s));
 			mon.remove(s);
 		}
-		//coefficient *= 
-		return false;
-		// return str;
 	}
 
-	public boolean derivative(String str) {
-		System.out.println("d");
-		return false;
+	public void derivative(String str) {
+		//dan xiang shi de qiu dao
+		if(mon.containsKey(str)){
+			if(mon.get(str)==1){
+				mon.remove(str);
+			}else{
+				coefficient *= mon.get(str);
+				mon.put(str, (mon.get(str)-1));
+			}
+		}
 	}
 
 	// judge two monomial are similar items or not
@@ -118,15 +126,17 @@ class monomial {
 }
 
 public class Expression {
+	private String root;
 	HashSet<String> varSet=new HashSet<String>();
 	private ArrayList<monomial> polynomial;
 
 	public String expression(String str) {
-		polynomial = new ArrayList<monomial>();
 		str = str.replaceAll("\\s*", "");
 		if (!isValid(str)) {
 			return "Error!";
 		}
+		root = str;
+		polynomial = new ArrayList<monomial>();
 		String[] mons = str.split("\\+");
 		for (String s : mons) {
 			String[] s2 = s.split("\\-");
@@ -145,25 +155,18 @@ public class Expression {
 	}
 
 	public String simplify(String str) {
-		/*try {
-			Expression New = (Expression)this.clone();
-		} catch (CloneNotSupportedException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}*/
-		//New = (Expression)this.clone();
-		
+		String output;
 		HashMap<String,Integer> vals=new HashMap<String,Integer>();
-		//System.out.println(str);
 		str=str.replace("!simplify","");
-		//System.out.println(str);
 		str=str.replaceAll("\\s*", "");
-		//System.out.println(str);
+		String partern = "[a-zA-Z]+=[0-9]+";
 		String[] vars=str.split(",");
 		for(String s:vars){
+			if(!str.matches(partern))
+				return "Wrong Parameter!!!";
 			String [] tmp=s.split("=");
 			if(!varSet.contains(tmp[0]))
-				return "Error!";
+				return "Error, no variable!";
 			else{
 				vals.put(tmp[0],Integer.parseInt(tmp[1]));
 			}
@@ -172,7 +175,9 @@ public class Expression {
 			polynomial.get(i).simplify(vals);
 		}
 		collect();
-		return toString();
+		output = toString();
+		expression(root);
+		return output;
 	}
 
 	// combine similar terms
@@ -193,8 +198,17 @@ public class Expression {
 	}
 
 	public String derivative(String str) {
-		System.out.println("d");
-		return str;
+		String output;
+		str=str.replace("!d/d","");
+		str=str.replaceAll("\\s*", "");
+		for (int i = 0; i < polynomial.size(); i++) {
+			polynomial.get(i).derivative(str);
+		}
+		collect();
+//		System.out.println("d");
+		output = toString();
+		expression(root);
+		return output;
 	}
 
 	public String toString() {
@@ -227,23 +241,22 @@ public class Expression {
 	}
 
 	public boolean isValid(String str) {
+		
 		String partern1 = "[a-zA-Z0-9\\+\\-\\*\\^]{0,}";// is consist of valid
+//		String partern1 = "[^a-z^A-Z^0-9^\\+^\\-^\\*^\\^]";
 		String partern2 = "[\\+\\-\\*\\^]{2,}";// is there two or more operation
 		String partern3 = "^[a-zA-Z0-9]";// start with char or number
 		String partern4 = "[a-zA-Z0-9]$";// end with char or number
-		String partern5 = "[0-9][a-zA-Z]";// char can not be after number
-		;
+		String partern5 = "[0-9][a-zA-Z]";// number can not be followed by char
+		String partern6 = "\\^[^0-9]";//^ must followed by number 
 		boolean flag = isMatch(partern1, str) && !isFind(partern2, str) && isFind(partern3, str)
-				&& isFind(partern4, str) && !isFind(partern5, str);
-
-		
-		 /*System.out.println(isMatch(partern1,str));
-		 System.out.println(isFind(partern2,str));
-		 System.out.println(isFind(partern3,str));
-		 System.out.println(isFind(partern4,str));
-		 System.out.println(isFind(partern5,str));*/
-		 
-
+				&& isFind(partern4, str) && !isFind(partern5, str) && !isFind(partern6,str);
+		/* System.out.println("1:"+isMatch(partern1,str));
+		 System.out.println("2:"+isFind(partern2,str));
+		 System.out.println("3:"+isFind(partern3,str));
+		 System.out.println("4:"+isFind(partern4,str));
+		 System.out.println("5:"+isFind(partern5,str));
+		 System.out.println("6:"+isFind(partern6,str));*/
 		return flag;
 	}
 
@@ -262,8 +275,10 @@ public class Expression {
 				System.out.println(person.simplify(str));
 			else if (str.startsWith("!d/d"))
 				System.out.println(person.derivative(str));
-			else if (str.equalsIgnoreCase("!exit"))
+			else if (str.equalsIgnoreCase("!exit")){
+				System.out.println("Exit Scuess!");
 				break;
+			}
 			else
 				System.out.println("Command Error!");
 		}
