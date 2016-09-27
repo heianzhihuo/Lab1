@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+"-//Apache Software Foundation//DTD Struts Configuration 2.5//EN"
+"http://struts.apache.org/dtds/struts-2.5.dtd">
+<struts>
+	<constant name="struts.devMode" value="true" />
+	<include file="struts-default.xml" />
+	<package name="action" extends="struts-default">
+		<action name="showAll" class="action.BookAction" method="showAll">
+			<result>ShowAll.jsp</result>
+		</action>
+		<action name="showWriters">
+			<result>showAll.html</result>
+		</action>
+		<action name="addBook" class="action.BookAction" method="addBook">
+			<result>ShowAll.html</result>
+		</action>
+		<action name="deleteBook" class="action.BookAction" method="deleteBook">
+			<result>success.jsp</result>
+		</action>
+	</package>
+	
+
+</struts>
