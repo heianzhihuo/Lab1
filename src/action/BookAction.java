@@ -8,8 +8,6 @@ import java.util.ArrayList;
 
 import com.opensymphony.xwork2.ActionSupport;
 
-import model.Book;
-
 public class BookAction extends ActionSupport {
 
 	private ArrayList<Book> books = new ArrayList<Book>();

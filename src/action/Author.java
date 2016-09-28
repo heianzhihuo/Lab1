@@ -1,4 +1,4 @@
-package model;
+package action;
 
 public class Author {
 	
