@@ -5,11 +5,11 @@ import java.sql.Date;
 public class Book {
 	
 	long ISBN;
-	private String Title;
+	private String Title="";
 	private long AuthorID;
-	private String Publisher;
-	private Date PublishDate;
-	private float Price;
+	private String Publisher="";
+	private Date PublishDate=new Date(0);
+	private float Price=0;
 	
 	public void setISBN(long ISBN){
 		this.ISBN = ISBN;

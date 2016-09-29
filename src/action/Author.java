@@ -3,9 +3,9 @@ package action;
 public class Author {
 	
 	private long AuthorID;
-	private String Name;
-	private int Age;
-	private String Country;
+	private String Name="";
+	private int Age=0;
+	private String Country="";
 	
 	public void setAuthorID(long AuthorID){
 		this.AuthorID = AuthorID;

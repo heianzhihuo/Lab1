@@ -79,8 +79,6 @@ a.form2 {
 
 
 	</s:form>
-	<a href="http://127.0.0.1:8000/search/" class="form"><font
-		color="blue">查询联系人</font></a>
 	<a href="/BookLibrary/index.html" class="form1"><font color="red">返回首页</font></a>
 	<a href="/BookLibrary/showAll" class="form2"><font color="#FF00FF">预览联系人</font></a>
 	<div id="footer">

@@ -6,7 +6,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <link rel="icon" href="picture/favicon.ico" type="image/x-icon" />
-
+<link rel="stylesheet" type="text/css" href="css/stytles3.css" />
 <title>图书管理系统</title>
 </head>
 <body>

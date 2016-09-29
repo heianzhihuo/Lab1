@@ -50,6 +50,7 @@ public class BookAction extends ActionSupport {
 			if (rs1.next()) {// 先判断该作者是否存在
 				// 作者存在，更新作者信息
 				author.setAuthorID(rs1.getLong("AuthorID"));
+				sql2 = "update author set Age=";
 				sql2 = "update author set Age=" + author.getAge()
 						+ ",Country='" + author.getCountry()
 						+ "' where AuthorID=" + author.getAuthorID() + ";";
@@ -65,10 +66,19 @@ public class BookAction extends ActionSupport {
 				author.setAuthorID(rs1.getLong("AuthorID"));
 			}
 			book.setAuthorID(author.getAuthorID());
-			sql3 = "insert into book (ISBN,Title,AuthorID,Publisher,PublishDate,Price) values (";
-			sql3 = sql3 + book.ISBN + ",'" + book.getTitle() + "',"
-					+ book.getAuthorID() + ",'" + book.getPublisher() + "','"
-					+ book.getPublishDate() + "'," + book.getPrice() + ");";
+			if (book.getPublishDate() != null) {
+				sql3 = "insert into book (ISBN,Title,AuthorID,Publisher,PublishDate,Price) values (";
+				sql3 = sql3 + book.ISBN + ",'" + book.getTitle() + "',"
+						+ book.getAuthorID() + ",'" + book.getPublisher()
+						+ "','" + book.getPublishDate() + "',"
+						+ book.getPrice() + ");";
+			} else {
+				sql3 = "insert into book (ISBN,Title,AuthorID,Publisher,Price) values (";
+				sql3 = sql3 + book.ISBN + ",'" + book.getTitle() + "',"
+						+ book.getAuthorID() + ",'" + book.getPublisher()
+						+ "'," + book.getPrice() + ");";
+			}
+//			System.out.println(sql3);
 			result = stmt.executeUpdate(sql3);
 			if (result == 1) {
 				return SUCCESS;
@@ -143,9 +153,18 @@ public class BookAction extends ActionSupport {
 				sql2 = "update author set Age=" + author.getAge()
 						+ ",Country='" + author.getCountry()
 						+ "' where AuthorID=" + author.getAuthorID() + ";";
-				sql1 = "update book set Publisher=" + "'" + book.getPublisher()
-						+ "',PublishDate='" + book.getPublishDate()
-						+ "',Price=" + book.getPrice()+" where ISBN="+book.getISBN();
+				stmt.executeUpdate(sql2);
+				if (book.getPublishDate() != null) {
+					sql1 = "update book set Publisher=" + "'"
+							+ book.getPublisher() + "',PublishDate='"
+							+ book.getPublishDate() + "',Price="
+							+ book.getPrice() + " where ISBN=" + book.getISBN();
+				} else {
+					sql1 = "update book set Publisher=" + "'"
+							+ book.getPublisher() + "',Price="
+							+ book.getPrice() + " where ISBN=" + book.getISBN();
+				}
+//				System.out.println(sql1);
 				stmt.executeUpdate(sql1);
 				return SUCCESS;
 			}
