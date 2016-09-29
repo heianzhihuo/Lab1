@@ -3,32 +3,32 @@ package action;
 public class Author {
 	
 	private long AuthorID;
-	private String name;
-	private int age;
+	private String Name;
+	private int Age;
 	private String Country;
 	
-	public void setID(long AuthorID){
+	public void setAuthorID(long AuthorID){
 		this.AuthorID = AuthorID;
 	}
 	
-	public long getID(){
+	public long getAuthorID(){
 		return AuthorID;
 	}
 	
-	public void setName(String name){
-		this.name = name;
+	public void setName(String Name){
+		this.Name = Name;
 	}
 	
 	public String getName(){
-		return name;
+		return Name;
 	}
 	
-	public void setAge(int age){
-		this.age = age;
+	public void setAge(int Age){
+		this.Age = Age;
 	}
 	
 	public int getAge(){
-		return age;
+		return Age;
 	}
 	
 	public void setCountry(String Country){

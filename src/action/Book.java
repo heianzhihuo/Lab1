@@ -4,7 +4,7 @@ import java.sql.Date;
 
 public class Book {
 	
-	private long ISBN;
+	long ISBN;
 	private String Title;
 	private long AuthorID;
 	private String Publisher;

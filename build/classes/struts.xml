@@ -4,21 +4,44 @@
 "http://struts.apache.org/dtds/struts-2.5.dtd">
 <struts>
 	<constant name="struts.devMode" value="true" />
+	<constant name="struts.i18n.encoding" value="utf-8" />
 	<include file="struts-default.xml" />
 	<package name="action" extends="struts-default">
-		<action name="showAll" class="action.BookAction" method="showAll">
-			<result>ShowAll.jsp</result>
-		</action>
-		<action name="showWriters">
-			<result>showAll.html</result>
-		</action>
 		<action name="addBook" class="action.BookAction" method="addBook">
-			<result>ShowAll.html</result>
+			<result name="success">Success.html</result>
+			<result name="error">Error.html</result>
 		</action>
+
 		<action name="deleteBook" class="action.BookAction" method="deleteBook">
-			<result>success.jsp</result>
+			<result name="success">Success.html</result>
+			<result name="error">Error.html</result>
+		</action>
+
+		<action name="showAll" class="action.BookAction" method="showAll">
+			<result>showAll.jsp</result>
+		</action>
+
+		<action name="reviseBook" class="action.BookAction" method="reviseBook">
+			<result name="revise">reviseBook.jsp</result>
+			<result name="success">Success.html</result>
+			<result name="error">Error.html</result>
+		</action>
+
+		<action name="searchBook" class="action.BookAction" method="searchBook">
+			<result name="success">showBook.jsp</result>
+			<result name="error">Failure.html</result>
+		</action>
+
+		<action name="addAuthor" class="action.BookAction" method="addAuthor">
+			<result name="success">addBook.jsp</result>
+			<result name="error">Error.html</result>
+		</action>
+
+		<action name="searchAuthor" class="action.BookAction" method="searchAuthor">
+			<result name="success">showAuthor.jsp</result>
+			<result name="error">Error.html</result>
 		</action>
 	</package>
-	
+
 
 </struts>
