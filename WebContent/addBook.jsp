@@ -4,32 +4,11 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
-<META NAME="Generator" CONTENT="EditPlus">
-<META NAME="Author" CONTENT="">
-<META NAME="Keywords" CONTENT="">
-<META NAME="Description" CONTENT="">
 <link rel="stylesheet" type="text/css" href="css/stytles.css" />
+<link rel="icon" href="picture/favicon.ico" type="image/x-icon" />
 <title>图书管理系统</title>
 </head>
-<style type="text/css">
-a.form {
-	position: absolute;
-	left: 530px;
-	top: 550px;
-}
 
-a.form1 {
-	position: absolute;
-	left: 650px;
-	top: 550px;
-}
-
-a.form2 {
-	position: absolute;
-	left: 770px;
-	top: 550px;
-}
-</style>
 <body>
 	<s:form action="addBook">
 		<table width="300" height="400" border="1" align="center">
@@ -39,8 +18,8 @@ a.form2 {
 				</td>
 			</tr>
 			<s:param name="ISBN">
-					<s:property value="Title" />
-				</s:param>
+				<s:property value="Title" />
+			</s:param>
 			<tr>
 				<td><s:textfield name="book.ISBN" required="true" label="ISBN"></s:textfield></td>
 			</tr>
@@ -49,14 +28,14 @@ a.form2 {
 			</tr>
 
 			<tr>
-				<td><s:textfield name="book.Publisher" label="出版社" ></s:textfield></td>
+				<td><s:textfield name="book.Publisher" label="出版社"></s:textfield></td>
 			</tr>
 
 			<tr>
-				<s:textfield name="book.PublishDate" label="出版日期" ></s:textfield>
+				<s:textfield name="book.PublishDate" label="出版日期"></s:textfield>
 			</tr>
 			<tr>
-				<td><s:textfield name="book.Price" label="价格" ></s:textfield></td>
+				<td><s:textfield name="book.Price" label="价格"></s:textfield></td>
 			</tr>
 			<tr>
 			</tr>
@@ -66,9 +45,9 @@ a.form2 {
 				</td>
 			</tr>
 			<tr>
-				<s:textfield name="author.Name" label="姓名" required="true"/>
+				<s:textfield name="author.Name" label="姓名" required="true" />
 				<s:textfield name="author.Age" label="年龄" />
-				<s:textfield name="author.Country" label="国籍" ></s:textfield>
+				<s:textfield name="author.Country" label="国籍"></s:textfield>
 			</tr>
 			<tr>
 				<td colspan=3 align="center"><input type="submit"
@@ -79,8 +58,10 @@ a.form2 {
 
 
 	</s:form>
-	<a href="/BookLibrary/index.html" class="form1"><font color="red">返回首页</font></a>
-	<a href="/BookLibrary/showAll" class="form2"><font color="#FF00FF">预览联系人</font></a>
+	<div>
+		<a href="/BookLibrary/index.html" class="form1"><font color="red">返回首页</font></a>
+		<a href="/BookLibrary/showAll" class="form2"><font color="#FF00FF">预览书籍</font></a>
+	</div>
 	<div id="footer">
 		Copyright 2016 黄文伟<br />哈尔滨工业大学 计算机科学与技术学院 <br />
 	</div>

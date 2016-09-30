@@ -94,16 +94,16 @@
 		</s:iterator>
 	</table>
 	<br />
-	<a href="searchBook.jsp" class=form1><font color="white" face="楷体"
-		size=4>查找书籍</font></a>
+	<a href="searchBook.jsp" class=form1><font color="#FF0000"
+		face="楷体" size=4>查找书籍</font></a>
 	<br />
-	<a href="searchAuthor.jsp" class="form2"><font color="white"
+	<a href="searchAuthor.jsp" class="form2"><font color="#FF0000"
 		face="楷体" size=4>查询作者</font></a>
 	<br />
-	<a href="addBook.jsp" class="form3"><font color="white" face="楷体"
+	<a href="addBook.jsp" class="form3"><font color="#FF0000" face="楷体"
 		size=4>添加书籍</font></a>
 	<br />
-	<a href="index.html" class="form4"><font color="white" face="楷体"
+	<a href="index.html" class="form4"><font color="#FF0000" face="楷体"
 		size=4>返回主页</font></a>
 </body>
 </html>

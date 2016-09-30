@@ -13,7 +13,7 @@
 	<h1 align="center">查找成功</h1>
 	<table class=form1 width="1000" border="1" align="center">
 		<tr>
-			<td colspan="4" style="background-color: #99bbbb;" align="center">作者信息</td>
+			<th class=form1 colspan="4" align="center">作者信息</th>
 		</tr>
 		<tr>
 			<th>姓名：</th>
@@ -31,7 +31,7 @@
 
 	<table width="1000" border="1" align="center">
 		<tr>
-			<td colspan="7" style="background-color: #99bbbb;" align="center">书籍信息</td>
+			<th class=form1 colspan="7" align="center">书籍信息</th>
 		</tr>
 		<tr>
 			<th bgcolor="white" height=30>ISBN</th>
@@ -119,16 +119,16 @@
 		</s:iterator>
 	</table>
 	<br />
-	<a href="searchBook.jsp" class=form1><font color="white" face="楷体"
-		size=4>查找书籍</font></a>
+	<a href="searchBook.jsp" class=form1><font color="#FF0000"
+		face="楷体" size=4>查找书籍</font></a>
 	<br />
-	<a href="searchAuthor.jsp" class="form2"><font color="white"
+	<a href="searchAuthor.jsp" class="form2"><font color="#FF0000"
 		face="楷体" size=4>查询作者</font></a>
 	<br />
-	<a href="addBook.jsp" class="form3"><font color="white" face="楷体"
+	<a href="addBook.jsp" class="form3"><font color="#FF0000" face="楷体"
 		size=4>添加书籍</font></a>
 	<br />
-	<a href="index.html" class="form4"><font color="white" face="楷体"
+	<a href="index.html" class="form4"><font color="#FF0000" face="楷体"
 		size=4>返回主页</font></a>
 </body>
 </html>

@@ -10,45 +10,56 @@
 <title>图书管理系统</title>
 </head>
 <body>
-	<table width="1000" align="center">
+	<table class=form1 width="1000" align="center">
 		<tr>
-			<td colspan="4" align="center">书籍信息</td>
+			<th class=form1 colspan="4" align="center">书籍信息</th>
 		</tr>
 		<tr>
 			<th>ISBN:</th>
-			<td><s:property value="book.ISBN" /></td>
+			<td class=form1><s:property value="book.ISBN" /></td>
 			<th>书名：</th>
-			<td><s:property value="book.Title" /></td>
+			<td class=form2><s:property value="book.Title" /></td>
 		</tr>
 		<tr>
 			<th>出版社：</th>
-			<td><s:property value="book.Publisher" /></td>
+			<td class=form2><s:property value="book.Publisher" /></td>
 			<th>出版日期：</th>
-			<td><s:property value="book.PublishDate" /></td>
+			<td class=form1><s:property value="book.PublishDate" /></td>
 		</tr>
 		<tr>
 			<th>价格：</th>
-			<td><s:property value="book.Price" /></td>
+			<td class=form1><s:property value="book.Price" /></td>
 		</tr>
 	</table>
 
-	<table width="1000" border="1" align="center">
+	<table class=form1 width="1000" align="center">
 		<tr>
-			<td colspan="4" style="background-color: #99bbbb;" align="center">作者信息</td>
+			<th class=form1 colspan="4" align="center">作者信息</th>
 		</tr>
 		<tr>
 			<th>姓名：</th>
-			<td><s:property value="author.Name" /></td>
+			<td class=form1><s:property value="author.Name" /></td>
 			<th>序列号：</th>
-			<td><s:property value="author.AuthorID" /></td>
+			<td class=form2><s:property value="author.AuthorID" /></td>
 		</tr>
 		<tr>
 			<th>年龄：</th>
-			<td><s:property value="author.Age" /></td>
+			<td class=form2><s:property value="author.Age" /></td>
 			<th>国籍：</th>
-			<td><s:property value="author.Country" /></td>
+			<td class=form1><s:property value="author.Country" /></td>
 		</tr>
 	</table>
-
+	<br />
+	<a href="searchBook.jsp" class=form1><font color="#FF0000"
+		face="楷体" size=4>查找书籍</font></a>
+	<br />
+	<a href="searchAuthor.jsp" class="form2"><font color="#FF0000"
+		face="楷体" size=4>查询作者</font></a>
+	<br />
+	<a href="addBook.jsp" class="form3"><font color="#FF0000" face="楷体"
+		size=4>添加书籍</font></a>
+	<br />
+	<a href="index.html" class="form4"><font color="#FF0000" face="楷体"
+		size=4>返回主页</font></a>
 </body>
 </html>

@@ -15,7 +15,13 @@ h1 {
 
 th {
 	height: 35px;
-	background:#6699FF;
+	background: #6699FF;
+	color: #0033CC;
+}
+
+th.form1 {
+	height: 40px;
+	background: #99bbbb;
 	color: #0033CC;
 }
 
@@ -23,13 +29,15 @@ td.form {
 	height: 30px;
 	background: #FFFFCC;
 }
+
 td.form1 {
 	height: 30px;
 	background: #CCFFFF;
 }
-td.form2{
+
+td.form2 {
 	height: 30px;
-	background:#E0E0E0;
+	background: #E0E0E0;
 }
 
 table.form1 {

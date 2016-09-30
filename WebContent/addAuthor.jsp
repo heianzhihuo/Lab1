@@ -4,10 +4,7 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
-<META NAME="Generator" CONTENT="EditPlus">
-<META NAME="Author" CONTENT="">
-<META NAME="Keywords" CONTENT="">
-<META NAME="Description" CONTENT="">
+<link rel="icon" href="picture/favicon.ico" type="image/x-icon" />
 <link rel="stylesheet" type="text/css" href="css/stytles.css" />
 <title>图书管理系统</title>
 </head>
@@ -38,9 +35,9 @@ a.form2 {
 					<font size="5px">作者信息</font>
 				</td>
 			</tr>
-				<s:textfield name="author.Name" label="姓名" required="true" />
-				<s:textfield name="author.Age" label="年龄" />
-				<s:textfield name="author.Country" label="国籍" ></s:textfield>
+			<s:textfield name="author.Name" label="姓名" required="true" />
+			<s:textfield name="author.Age" label="年龄" />
+			<s:textfield name="author.Country" label="国籍"></s:textfield>
 			<tr>
 				<td colspan=3 align="center"><input type="submit"
 					value="   保   存   " class="button"><input type="reset"

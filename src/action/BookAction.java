@@ -78,7 +78,7 @@ public class BookAction extends ActionSupport {
 						+ book.getAuthorID() + ",'" + book.getPublisher()
 						+ "'," + book.getPrice() + ");";
 			}
-//			System.out.println(sql3);
+			// System.out.println(sql3);
 			result = stmt.executeUpdate(sql3);
 			if (result == 1) {
 				return SUCCESS;
@@ -164,7 +164,7 @@ public class BookAction extends ActionSupport {
 							+ book.getPublisher() + "',Price="
 							+ book.getPrice() + " where ISBN=" + book.getISBN();
 				}
-//				System.out.println(sql1);
+				// System.out.println(sql1);
 				stmt.executeUpdate(sql1);
 				return SUCCESS;
 			}
