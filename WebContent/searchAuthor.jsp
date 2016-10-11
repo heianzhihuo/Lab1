@@ -18,13 +18,13 @@
 		</s:form>
 	</div>
 	<br />
-	<a href="/BookLibrary/searchBook.jsp" class=form1><font
+	<a href="searchBook.jsp" class=form1><font
 		color="white" face="楷体" size=4>查找书籍</font></a>
 	<br />
-	<a href="/BookLibrary/index.html" class="form2"><font
+	<a href="index.html" class="form2"><font
 		color="white" face="楷体" size=4>返回主页</font></a>
 	<br />
-	<a href="/BookLibrary/addBook.jsp" class="form3"><font
+	<a href="addBook.jsp" class="form3"><font
 		color="white" face="楷体" size=4>添加书籍</font></a>
 	<br />
 	<a href="showAll" class="form4"><font color="white" face="楷体"

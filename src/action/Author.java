@@ -22,7 +22,7 @@ public class Author {
 	public String getName() {
 		return Name;
 	}
-
+	
 	public void setAge(int Age) {
 		this.Age = Age;
 	}

@@ -3,6 +3,7 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <link rel="icon" href="picture/favicon.ico" type="image/x-icon" />
 <link rel="stylesheet" type="text/css" href="css/stytles3.css" />
 <title>图书管理系统</title>
@@ -34,14 +35,16 @@
 				<s:else>
 					<td class=form1>
 				</s:else>
-				<s:url var="sun" value="/searchBook">
-					<s:param name="Title">
-						<s:property value="Title" />
+
+				<s:url var="sun" value="/showBook">
+					<s:param name="ISBN">
+						<s:property value="ISBN" />
 					</s:param>
 				</s:url>
 				<s:a href="%{sun}">
 					<font color="black"><s:property value="Title" /></font>
 				</s:a>
+
 				</td>
 				<s:if test="#st.odd==true">
 					<td class=form1>
@@ -76,7 +79,7 @@
 				<s:else>
 					<td class=form1>
 				</s:else>
-				<s:a href="/BookLibrary/deleteBook?ISBN=%{ISBN}">
+				<s:a href="deleteBook?ISBN=%{ISBN}">
 					<font color="black">删除</font>
 				</s:a>
 				</td>
@@ -86,7 +89,7 @@
 				<s:else>
 					<td class=form2>
 				</s:else>
-				<s:a href="/BookLibrary/reviseBook?ISBN=%{ISBN}">
+				<s:a href="reviseBook?ISBN=%{ISBN}">
 					<font color="black">修改</font>
 				</s:a>
 				</td>

@@ -5,6 +5,7 @@
 <struts>
 	<constant name="struts.devMode" value="false" />
 	<constant name="struts.i18n.encoding" value="utf-8" />
+	<constant name="struts.i18n.decoding" value="utf-8" />
 	<include file="struts-default.xml" />
 	<package name="action" extends="struts-default">
 		<action name="addBook" class="action.BookAction" method="addBook">
@@ -28,6 +29,11 @@
 		</action>
 
 		<action name="searchBook" class="action.BookAction" method="searchBook">
+			<result name="success">showBook.jsp</result>
+			<result name="error">Error.html</result>
+		</action>
+		
+		<action name="showBook" class="action.BookAction" method="showBook">
 			<result name="success">showBook.jsp</result>
 			<result name="error">Error.html</result>
 		</action>

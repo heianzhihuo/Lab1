@@ -1,5 +1,5 @@
 body {
-	background-image: url(/BookLibrary/picture/back.gif);
+	background-image: url(/picture/back.gif);
 	padding-left: 50px;
 	padding-right: 50px;
 	padding-top: 10px;
@@ -16,7 +16,7 @@ body {
 	text-align: center;
 	clear: both;
 	text-align: center;
-	margin-top: 250px;
+	margin-top: 150px;
 }
 
 td.form {

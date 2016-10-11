@@ -4,6 +4,7 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
+
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <link rel="icon" href="picture/favicon.ico" type="image/x-icon" />
 <link rel="stylesheet" type="text/css" href="css/stytles3.css" />
@@ -59,9 +60,9 @@
 				<s:else>
 					<td class=form1>
 				</s:else>
-				<s:url var="sun" value="/searchBook">
-					<s:param name="Title">
-						<s:property value="Title" />
+				<s:url var="sun" value="/showBook">
+					<s:param name="ISBN">
+						<s:property value="ISBN" />
 					</s:param>
 				</s:url>
 				<s:a href="%{sun}">
@@ -101,7 +102,7 @@
 				<s:else>
 					<td class=form1>
 				</s:else>
-				<s:a href="/BookLibrary/deleteBook?ISBN=%{ISBN}">
+				<s:a href="deleteBook?ISBN=%{ISBN}">
 					<font color="black">删除</font>
 				</s:a>
 				</td>
@@ -111,7 +112,7 @@
 				<s:else>
 					<td class=form2>
 				</s:else>
-				<s:a href="/BookLibrary/reviseBook?ISBN=%{ISBN}">
+				<s:a href="reviseBook?ISBN=%{ISBN}">
 					<font color="black">修改</font>
 				</s:a>
 				</td>
@@ -125,8 +126,8 @@
 	<a href="searchAuthor.jsp" class="form2"><font color="#FF0000"
 		face="楷体" size=4>查询作者</font></a>
 	<br />
-	<a href="addBook.jsp" class="form3"><font color="#FF0000" face="楷体"
-		size=4>添加书籍</font></a>
+	<a href="showAll" class="form3"><font color="#FF0000" face="楷体"
+		size=4>预览书籍</font></a>
 	<br />
 	<a href="index.html" class="form4"><font color="#FF0000" face="楷体"
 		size=4>返回主页</font></a>

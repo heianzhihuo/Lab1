@@ -58,8 +58,8 @@
 		</table>
 	</s:form>
 	<div>
-		<a href="/BookLibrary/index.html" class="form1"><font color="red">返回首页</font></a>
-		<a href="/BookLibrary/showAll" class="form2"><font color="#FF00FF">预览书籍</font></a>
+		<a href="index.html" class="form1"><font color="red">返回首页</font></a>
+		<a href="showAll" class="form2"><font color="#FF00FF">预览书籍</font></a>
 	</div>
 	<div id="footer">
 		Copyright 2016 黄文伟<br />哈尔滨工业大学 计算机科学与技术学院 <br />

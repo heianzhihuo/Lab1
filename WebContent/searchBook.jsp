@@ -6,7 +6,6 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <link rel="icon" href="picture/favicon.ico" type="image/x-icon" />
-<link rel="icon" href="picture/favicon.ico" type="image/x-icon" />
 <link rel="stylesheet" type="text/css" href="css/stytles1.css" />
 <title>图书管理系统</title>
 </head>
@@ -15,17 +14,17 @@
 	<div id="form">
 		<s:form action="searchBook">
    请输入书名 :<s:textfield id="form1" name="Title"></s:textfield>
-			<s:submit id="form2" />
+			<s:submit id="form2"/>
 		</s:form>
 	</div>
 	<br />
-	<a href="/BookLibrary/index.html" class=form1><font
+	<a href="index.html" class=form1><font
 		color="white" face="楷体" size=4>返回主页</font></a>
 	<br />
-	<a href="/BookLibrary/searchAuthor.jsp" class="form2"><font
+	<a href="searchAuthor.jsp" class="form2"><font
 		color="white" face="楷体" size=4>查询作者</font></a>
 	<br />
-	<a href="/BookLibrary/addBook.jsp" class="form3"><font
+	<a href="addBook.jsp" class="form3"><font
 		color="white" face="楷体" size=4>添加书籍</font></a>
 	<br />
 	<a href="showAll" class="form4"><font color="white" face="楷体"
