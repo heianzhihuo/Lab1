@@ -1,8 +1,8 @@
 import java.util.Scanner;
 import java.util.regex.*;
 public class Lab1 {
-	static String exp = null;
-	static String command = null;
+	static String exp = null;//表达式
+	static String command = null;//指令
 	//处理表达式
 	static int expression(String str){
 		Pattern p1=Pattern.compile("((^[1-9]\\d*)|[a-zA-Z])([\\*\\+]([a-zA-Z]|[1-9]\\d*))*");
