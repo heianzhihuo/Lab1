@@ -31,7 +31,7 @@ public class BookAction extends ActionSupport {
 			Class.forName("com.mysql.jdbc.Driver"); // 加载MYSQL JDBC驱动程序
 			//connect = DriverManager.getConnection("jdbc:mysql://localhost:3306/bookdb", "root", "123456");
 			//nckafpxdluqr.rds.sae.sina.com.cn
-			connect = DriverManager.getConnection("jdbc:mysql://lugudtactwrg.rds.sae.sina.com.cn:10422/bookdb", "root", "123456");
+			connect = DriverManager.getConnection("jdbc:mysql://vornibcvgngm.rds.sae.sina.com.cn:10630/bookdb", "root", "123456");
 			// 连接URL为 jdbc:mysql//服务器地址/数据库名 ，后面的2个参数分别是登陆用户名和密码
 			stmt = connect.createStatement();
 		} catch (Exception e) {
