@@ -1,0 +1,190 @@
+src/Lab1.java:3:	All classes and interfaces must belong to a named package
+src/Lab1.java:3:	All methods are static.  Consider using a utility class instead. Alternatively, you could add a private constructor or make the class abstract to silence this warning.
+src/Lab1.java:3:	Avoid short class names like Lab1
+src/Lab1.java:3:	The class 'Lab1' has a Cyclomatic Complexity of 9 (Highest = 12).
+src/Lab1.java:3:	The class 'Lab1' has a Modified Cyclomatic Complexity of 8 (Highest = 12).
+src/Lab1.java:3:	The class 'Lab1' has a Standard Cyclomatic Complexity of 9 (Highest = 12).
+src/Lab1.java:3:	headerCommentRequirement Required
+src/Lab1.java:4:	Avoid using redundant field initializer for 'exp'
+src/Lab1.java:4:	To avoid mistakes add a comment at the beginning of the exp field if you want a default access modifier
+src/Lab1.java:4:	Use explicit scoping instead of the default package private level
+src/Lab1.java:4:	fieldCommentRequirement Required
+src/Lab1.java:5:	Avoid using redundant field initializer for 'command'
+src/Lab1.java:5:	To avoid mistakes add a comment at the beginning of the command field if you want a default access modifier
+src/Lab1.java:5:	Use explicit scoping instead of the default package private level
+src/Lab1.java:5:	fieldCommentRequirement Required
+src/Lab1.java:7:	Parameter 'str' is not assigned and could be declared final
+src/Lab1.java:7:	To avoid mistakes add a comment at the beginning of the expression method if you want a default access modifier
+src/Lab1.java:7:	Use explicit scoping instead of the default package private level
+src/Lab1.java:8:	Avoid variables with short names like p1
+src/Lab1.java:8:	Local variable 'p1' could be declared final
+src/Lab1.java:9:	Avoid variables with short names like p2
+src/Lab1.java:9:	Local variable 'p2' could be declared final
+src/Lab1.java:10:	Avoid variables with short names like p3
+src/Lab1.java:10:	Local variable 'p3' could be declared final
+src/Lab1.java:11:	Avoid variables with short names like m1
+src/Lab1.java:11:	Local variable 'm1' could be declared final
+src/Lab1.java:11:	Potential violation of Law of Demeter (object not created locally)
+src/Lab1.java:12:	Avoid declaring a variable if it is unreferenced before a possible exit point.
+src/Lab1.java:12:	Avoid variables with short names like m2
+src/Lab1.java:12:	Found 'DU'-anomaly for variable 'm2' (lines '12'-'27').
+src/Lab1.java:12:	Local variable 'm2' could be declared final
+src/Lab1.java:12:	Potential violation of Law of Demeter (object not created locally)
+src/Lab1.java:13:	Avoid declaring a variable if it is unreferenced before a possible exit point.
+src/Lab1.java:13:	Avoid variables with short names like m3
+src/Lab1.java:13:	Found 'DU'-anomaly for variable 'm3' (lines '13'-'27').
+src/Lab1.java:13:	Local variable 'm3' could be declared final
+src/Lab1.java:13:	Potential violation of Law of Demeter (object not created locally)
+src/Lab1.java:14:	Potential violation of Law of Demeter (object not created locally)
+src/Lab1.java:15:	A method should have only one exit point, and that should be the last statement in the method
+src/Lab1.java:17:	Potential violation of Law of Demeter (object not created locally)
+src/Lab1.java:20:	A method should have only one exit point, and that should be the last statement in the method
+src/Lab1.java:22:	Potential violation of Law of Demeter (object not created locally)
+src/Lab1.java:24:	A method should have only one exit point, and that should be the last statement in the method
+src/Lab1.java:29:	The method 'simplify' has a Cyclomatic Complexity of 12.
+src/Lab1.java:29:	The method 'simplify' has a Modified Cyclomatic Complexity of 12.
+src/Lab1.java:29:	The method 'simplify' has a Standard Cyclomatic Complexity of 12.
+src/Lab1.java:29:	The method simplify() has an NPath complexity of 612
+src/Lab1.java:29:	To avoid mistakes add a comment at the beginning of the simplify method if you want a default access modifier
+src/Lab1.java:29:	Use explicit scoping instead of the default package private level
+src/Lab1.java:31:	Avoid declaring a variable if it is unreferenced before a possible exit point.
+src/Lab1.java:31:	Found 'DU'-anomaly for variable 'values' (lines '31'-'87').
+src/Lab1.java:31:	Local variable 'values' could be declared final
+src/Lab1.java:32:	Avoid declaring a variable if it is unreferenced before a possible exit point.
+src/Lab1.java:32:	Avoid variables with short names like p1
+src/Lab1.java:32:	Avoid variables with short names like p2
+src/Lab1.java:32:	Use one line for each declaration, it enhances code readability.
+src/Lab1.java:33:	Avoid declaring a variable if it is unreferenced before a possible exit point.
+src/Lab1.java:33:	Avoid variables with short names like m1
+src/Lab1.java:33:	Avoid variables with short names like m2
+src/Lab1.java:33:	Use one line for each declaration, it enhances code readability.
+src/Lab1.java:34:	Avoid declaring a variable if it is unreferenced before a possible exit point.
+src/Lab1.java:34:	Found 'DD'-anomaly for variable 'num' (lines '34'-'45').
+src/Lab1.java:34:	Found 'DD'-anomaly for variable 'var' (lines '34'-'41').
+src/Lab1.java:34:	Found 'DU'-anomaly for variable 'num' (lines '34'-'87').
+src/Lab1.java:34:	Found 'DU'-anomaly for variable 'result' (lines '34'-'87').
+src/Lab1.java:34:	Found 'DU'-anomaly for variable 'var' (lines '34'-'87').
+src/Lab1.java:34:	Use one line for each declaration, it enhances code readability.
+src/Lab1.java:35:	Avoid using if statements without curly braces
+src/Lab1.java:36:	A method should have only one exit point, and that should be the last statement in the method
+src/Lab1.java:39:	Potential violation of Law of Demeter (method chain calls)
+src/Lab1.java:39:	Potential violation of Law of Demeter (object not created locally)
+src/Lab1.java:40:	Avoid using if statements without curly braces
+src/Lab1.java:40:	Potential violation of Law of Demeter (object not created locally)
+src/Lab1.java:41:	Potential violation of Law of Demeter (object not created locally)
+src/Lab1.java:43:	Potential violation of Law of Demeter (method chain calls)
+src/Lab1.java:43:	Potential violation of Law of Demeter (object not created locally)
+src/Lab1.java:44:	Avoid using if statements without curly braces
+src/Lab1.java:44:	Potential violation of Law of Demeter (object not created locally)
+src/Lab1.java:45:	Potential violation of Law of Demeter (object not created locally)
+src/Lab1.java:47:	Avoid using if...else statements without curly braces
+src/Lab1.java:49:	Avoid using if...else statements without curly braces
+src/Lab1.java:49:	Potential violation of Law of Demeter (object not created locally)
+src/Lab1.java:52:	Potential violation of Law of Demeter (object not created locally)
+src/Lab1.java:53:	Found 'DD'-anomaly for variable 'result' (lines '53'-'78').
+src/Lab1.java:53:	Found 'DD'-anomaly for variable 'result' (lines '53'-'82').
+src/Lab1.java:53:	Found 'DD'-anomaly for variable 'result' (lines '53'-'84').
+src/Lab1.java:54:	Found 'DD'-anomaly for variable 'sum' (lines '54'-'75').
+src/Lab1.java:57:	Potential violation of Law of Demeter (method chain calls)
+src/Lab1.java:57:	Potential violation of Law of Demeter (object not created locally)
+src/Lab1.java:58:	Found 'DD'-anomaly for variable 'mult' (lines '58'-'60').
+src/Lab1.java:59:	Potential violation of Law of Demeter (object not created locally)
+src/Lab1.java:60:	Potential violation of Law of Demeter (object not created locally)
+src/Lab1.java:63:	Potential violation of Law of Demeter (method chain calls)
+src/Lab1.java:63:	Potential violation of Law of Demeter (object not created locally)
+src/Lab1.java:64:	Found 'DD'-anomaly for variable 'temp' (lines '64'-'67').
+src/Lab1.java:64:	Found 'DD'-anomaly for variable 'temp' (lines '64'-'70').
+src/Lab1.java:66:	Potential violation of Law of Demeter (object not created locally)
+src/Lab1.java:67:	Potential violation of Law of Demeter (object not created locally)
+src/Lab1.java:67:	Prefer StringBuffer over += for concatenating strings
+src/Lab1.java:69:	Avoid using Literals in Conditional Statements
+src/Lab1.java:69:	Avoid using if statements without curly braces
+src/Lab1.java:70:	Potential violation of Law of Demeter (object not created locally)
+src/Lab1.java:72:	Potential violation of Law of Demeter (method chain calls)
+src/Lab1.java:72:	Potential violation of Law of Demeter (object not created locally)
+src/Lab1.java:74:	Potential violation of Law of Demeter (object not created locally)
+src/Lab1.java:75:	Potential violation of Law of Demeter (method chain calls)
+src/Lab1.java:78:	Prefer StringBuffer over += for concatenating strings
+src/Lab1.java:81:	Avoid if (x != y) ..; else ..;
+src/Lab1.java:82:	Avoid using if...else statements without curly braces
+src/Lab1.java:82:	No need to call String.valueOf to append to a string.
+src/Lab1.java:82:	Prefer StringBuffer over += for concatenating strings
+src/Lab1.java:84:	Avoid using if...else statements without curly braces
+src/Lab1.java:84:	Potential violation of Law of Demeter (object not created locally)
+src/Lab1.java:84:	Potential violation of Law of Demeter (object not created locally)
+src/Lab1.java:89:	The method 'derivative' has a Cyclomatic Complexity of 11.
+src/Lab1.java:89:	The method 'derivative' has a Modified Cyclomatic Complexity of 11.
+src/Lab1.java:89:	The method 'derivative' has a Standard Cyclomatic Complexity of 11.
+src/Lab1.java:89:	The method derivative() has an NPath complexity of 390
+src/Lab1.java:89:	To avoid mistakes add a comment at the beginning of the derivative method if you want a default access modifier
+src/Lab1.java:89:	Use explicit scoping instead of the default package private level
+src/Lab1.java:91:	Avoid variables with short names like p1
+src/Lab1.java:91:	Avoid variables with short names like p2
+src/Lab1.java:91:	Avoid variables with short names like p3
+src/Lab1.java:91:	Use one line for each declaration, it enhances code readability.
+src/Lab1.java:92:	Avoid variables with short names like m1
+src/Lab1.java:92:	Avoid variables with short names like m2
+src/Lab1.java:92:	Avoid variables with short names like m3
+src/Lab1.java:92:	Use one line for each declaration, it enhances code readability.
+src/Lab1.java:93:	Found 'DD'-anomaly for variable 'count' (lines '93'-'101').
+src/Lab1.java:93:	Found 'DD'-anomaly for variable 'mult' (lines '93'-'112').
+src/Lab1.java:93:	Use one line for each declaration, it enhances code readability.
+src/Lab1.java:94:	Found 'DD'-anomaly for variable 'result' (lines '94'-'133').
+src/Lab1.java:94:	Found 'DD'-anomaly for variable 'temp' (lines '94'-'117').
+src/Lab1.java:94:	Use one line for each declaration, it enhances code readability.
+src/Lab1.java:98:	Potential violation of Law of Demeter (method chain calls)
+src/Lab1.java:98:	Potential violation of Law of Demeter (object not created locally)
+src/Lab1.java:100:	Potential violation of Law of Demeter (method chain calls)
+src/Lab1.java:100:	Potential violation of Law of Demeter (object not created locally)
+src/Lab1.java:101:	Found 'DD'-anomaly for variable 'count' (lines '101'-'103').
+src/Lab1.java:102:	Potential violation of Law of Demeter (object not created locally)
+src/Lab1.java:103:	Found 'DD'-anomaly for variable 'count' (lines '103'-'103').
+src/Lab1.java:110:	Avoid using if...else statements without curly braces
+src/Lab1.java:110:	Found 'DD'-anomaly for variable 'mult' (lines '110'-'112').
+src/Lab1.java:110:	Found 'DD'-anomaly for variable 'mult' (lines '110'-'114').
+src/Lab1.java:111:	Potential violation of Law of Demeter (object not created locally)
+src/Lab1.java:112:	Potential violation of Law of Demeter (object not created locally)
+src/Lab1.java:116:	Potential violation of Law of Demeter (method chain calls)
+src/Lab1.java:116:	Potential violation of Law of Demeter (object not created locally)
+src/Lab1.java:117:	Found 'DD'-anomaly for variable 'temp' (lines '117'-'119').
+src/Lab1.java:117:	Found 'DD'-anomaly for variable 'temp' (lines '117'-'122').
+src/Lab1.java:117:	Found 'DD'-anomaly for variable 'temp' (lines '117'-'124').
+src/Lab1.java:118:	Potential violation of Law of Demeter (object not created locally)
+src/Lab1.java:119:	Potential violation of Law of Demeter (object not created locally)
+src/Lab1.java:119:	Prefer StringBuffer over += for concatenating strings
+src/Lab1.java:121:	Avoid using Literals in Conditional Statements
+src/Lab1.java:122:	Avoid using if...else statements without curly braces
+src/Lab1.java:122:	Potential violation of Law of Demeter (object not created locally)
+src/Lab1.java:124:	Avoid using if...else statements without curly braces
+src/Lab1.java:124:	Prefer StringBuffer over += for concatenating strings
+src/Lab1.java:126:	Prefer StringBuffer over += for concatenating strings
+src/Lab1.java:132:	Potential violation of Law of Demeter (method chain calls)
+src/Lab1.java:132:	Potential violation of Law of Demeter (method chain calls)
+src/Lab1.java:133:	Prefer StringBuffer over += for concatenating strings
+src/Lab1.java:136:	Avoid using if statements without curly braces
+src/Lab1.java:136:	Potential violation of Law of Demeter (object not created locally)
+src/Lab1.java:137:	A method should have only one exit point, and that should be the last statement in the method
+src/Lab1.java:138:	Potential violation of Law of Demeter (object not created locally)
+src/Lab1.java:143:	Parameter 'args' is not assigned and could be declared final
+src/Lab1.java:143:	publicMethodCommentRequirement Required
+src/Lab1.java:146:	Found 'DD'-anomaly for variable 'result' (lines '146'-'161').
+src/Lab1.java:146:	Found 'DD'-anomaly for variable 'result' (lines '146'-'168').
+src/Lab1.java:146:	Found 'DU'-anomaly for variable 'result' (lines '146'-'179').
+src/Lab1.java:149:	Avoid instantiating new objects inside loops
+src/Lab1.java:149:	Avoid variables with short names like s
+src/Lab1.java:149:	Local variable 's' could be declared final
+src/Lab1.java:150:	Potential violation of Law of Demeter (object not created locally)
+src/Lab1.java:151:	Local variable 'com' could be declared final
+src/Lab1.java:152:	Switch statements should have a default label
+src/Lab1.java:154:	System.out.println is used
+src/Lab1.java:158:	System.out.println is used
+src/Lab1.java:162:	Avoid if (x != y) ..; else ..;
+src/Lab1.java:163:	Avoid using if...else statements without curly braces
+src/Lab1.java:163:	System.out.println is used
+src/Lab1.java:165:	Avoid using if...else statements without curly braces
+src/Lab1.java:165:	System.out.println is used
+src/Lab1.java:169:	Avoid if (x != y) ..; else ..;
+src/Lab1.java:170:	Avoid using if...else statements without curly braces
+src/Lab1.java:170:	System.out.println is used
+src/Lab1.java:172:	Avoid using if...else statements without curly braces
+src/Lab1.java:172:	System.out.println is used

@@ -1,0 +1,8 @@
+Found a 4 line (27 tokens) duplication in the following files: 
+Starting at line 58 of D:\Documents\GitHub\Lab4\src\Lab1.java
+Starting at line 110 of D:\Documents\GitHub\Lab4\src\Lab1.java
+
+			int mult=1;
+			while(m2.find()){
+				mult=mult*Integer.parseInt(m2.group());
+			}
