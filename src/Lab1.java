@@ -14,6 +14,7 @@ public class Lab1 {
 		Matcher m2 = p2.matcher(str);
 		Matcher m3 = p3.matcher(str);
 		if (m1.matches()) {
+			exp = str;
 			return 1;
 		}
 		if (m2.find()) {
@@ -22,7 +23,7 @@ public class Lab1 {
 			return 2;
 		}
 		if (m3.find()) {
-			command = str.substring(5);
+			command = str;
 			return 3;
 		}
 		return 0;
@@ -90,11 +91,12 @@ public class Lab1 {
 			result = result.substring(0, result.length() - 1);
 		}
 		return result;
-
 	}
 
 	// 求导
 	static String derivative() {
+		//if(command)
+		command = command.substring(5);
 		String[] terms = exp.split("\\+");
 		Pattern p1, p2, p3;
 		Matcher m1, m2, m3;
@@ -143,7 +145,7 @@ public class Lab1 {
 			}
 		}
 		if (result.isEmpty()) {
-			return null;
+			return "Error!";
 		}
 		result = result.substring(1);
 		return result;
@@ -164,7 +166,7 @@ public class Lab1 {
 				System.out.println("Error!");
 				break;
 			case 1:// 输入表达式合法，输出
-				exp = input;
+				//exp = input;
 				System.out.println(exp);
 				break;
 			case 2:// 带值化简
