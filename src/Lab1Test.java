@@ -7,7 +7,7 @@ public class Lab1Test {
 
 	@Before
 	public void setUp() throws Exception {
-		System.out.println(lab6.expression("5*4+6*x*y*x*z+x*z*y*z*3"));
+		lab6.expression("5*4+6*x*y*x*z+x*z*y*z*3");
 	}
 
 	@Test

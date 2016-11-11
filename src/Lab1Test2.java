@@ -18,7 +18,7 @@ public class Lab1Test2 {
 	@Test
 	public void testExpression2() {
 		//fail("Not yet implemented");
-		assertEquals(2,Lab1.expression("!simplify x=1"));
+		assertEquals(2,Lab1.expression("!simplify x=4"));
 	}
 	
 	@Test
