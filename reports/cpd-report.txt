@@ -1,8 +1,0 @@
-Found a 4 line (31 tokens) duplication in the following files: 
-Starting at line 229 of D:\Program Files\GitHub\Lab4\src\Lab1\Expression.java
-Starting at line 236 of D:\Program Files\GitHub\Lab4\src\Lab1\Expression.java
-
-	private boolean isMatch(String pattern, String s) {
-		Pattern p = Pattern.compile(pattern);
-		Matcher m = p.matcher(s);
-		boolean flag = m.matches();
